@@ -79,7 +79,7 @@ def getUserJson(userInfo,token):
     temperature = round(a, 1)
     return  {
         "businessType": "epmpics",
-        "method": ""submitUpInfo",
+        "method": "submitUpInfo",
         "jsonData": {
         "deptStr": {
              "deptid": 216094,

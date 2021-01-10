@@ -79,36 +79,139 @@ def getUserJson(userInfo,token):
     temperature = round(a, 1)
     return  {
         "businessType": "epmpics",
-        "method": "submitUpInfoSchool",
+        "method": ""submitUpInfo",
         "jsonData": {
         "deptStr": {
-            "deptid": userInfo['classId'],
-            "text": userInfo['classDescription']
+             "deptid": 216094,
+             "text": "人工智能与大数据学院-软件工程-软件1701"
         },
         #如果你来自其他学校，请自行打卡抓包修改地址字段
-        "areaStr": "{\"streetNumber\":\"7号\",\"street\":\"经八路\",\"district\":\"金水区\",\"city\":\"郑州市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"经八路三社区-3号楼\",\"lng\":113.67636200000192,\"lat\":34.780110968927,\"address\":\"金水区经八路7号经八路三社区-3号楼\",\"text\":\"河南省-郑州市\",\"code\":\"\"}",        "reportdate": round(time.time()*1000),
+        "areaStr": "{\"streetNumber\":\"7号\",\"street\":\"经八路\",\"district\":\"金水区\",\"city\":\"郑州市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"经八路三社区-3号楼\",\"lng\":113.67636200000192,\"lat\":34.780110968927,\"address\":\"金水区经八路7号经八路三社区-3号楼\",\"text\":\"河南省-郑州市\",\"code\":\"\"}", 
+        "reportdate": round(time.time()*1000),
         "customerid": userInfo['customerId'],
         "deptid": userInfo['classId'],
         "source": "app",
-        "templateid": "clockSign2",
+        "templateid": "pneumonia",
         "stuNo": userInfo['stuNo'],
         "username": userInfo['username'],
         "userid": round(time.time()),
         "updatainfo": [  
-            {
-                "propertyname": "temperature",
-                "value": temperature
-            },
-            {
-                "propertyname": "symptom",
-                "value": "无症状"
-            }
+                  {
+                    "propertyname": "isGoWarningAdress",
+                    "value": "女"
+                  },
+                  {
+                    "propertyname": "jtdz",
+                    "value": "河南省郑州市金水区"
+                  },
+                  {
+                    "propertyname": "personNO",
+                    "value": "412801199711041722"
+                  },
+                  {
+                    "propertyname": "langtineadress",
+                    "value": "河南省郑州市金水区七号院三号楼一单元10号"
+                  },
+                  {
+                    "propertyname": "ownPhone",
+                    "value": "13253616952"
+                  },
+                  {
+                    "propertyname": "emergencyContact",
+                    "value": "13592506675"
+                  },
+                  {
+                    "propertyname": "tradeNum",
+                    "value": "D01S204"
+                  },
+                  {
+                    "propertyname": "temperature",
+                    "value": "36.4"
+                  },
+                  {
+                    "propertyname": "symptom",
+                    "value": "均无"
+                  },
+                  {
+                    "propertyname": "isContactpatient",
+                    "value": "均无"
+                  },
+                  {
+                    "propertyname": "istouchcb",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "isTransitProvince",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "isTouch",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "backadress",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "isContactFriendIn14",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "sxaddress",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "medicalObservation",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "sxss",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "isConfirmed",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "assistRemark",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "gyfh",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "FamilyIsolate",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "ishborwh",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "IsHospitaltxt",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "fhhb",
+                    "value": "否"
+                  },
+                  {
+                    "propertyname": "isname",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "other1",
+                    "value": ""
+                  },
+                  {
+                    "propertyname": "isFFHasSymptom",
+                    "value": "是"
+                  }
         ],
-        "customerAppTypeRuleId": 147,
-        "clockState": 0,
-        "token": token
-        },
-        "token": token
+        "gpsType": 1,
+        "token": "8bc37c38-a030-4ade-9821-fcd30215ddcd"
+      }
     }    
 
 #信息获取函数

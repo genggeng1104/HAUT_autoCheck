@@ -210,7 +210,7 @@ def getUserJson(userInfo,token):
                   }
         ],
         "gpsType": 1,
-        "token": "8bc37c38-a030-4ade-9821-fcd30215ddcd"
+        "token": token
       }
     }    
 
